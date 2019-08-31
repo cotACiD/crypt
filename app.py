@@ -7,7 +7,7 @@ app = Flask(__name__)
 hashes = ["pzzki2"]
 
 def htmlImage():
-	f=codecs.open("playfair.html", 'r')
+	f=codecs.open("playfair", 'r')
 	return f.read()
 
 def Image():
@@ -22,12 +22,14 @@ def rebound():
 		
 		if key == "stego":
 			return htmlImage()
+		elif key == "Zmlu":
+			return "Yes! You have finished this puzzle. :)"
 		elif key in hashes:
 			return Image()
 		else:
-			return "<html><font color = \"white\" size = \"20\">opubmmspbetmfbeupspnf.cvujujtbojdftubsu</font></html>"
+			return "<html><font color = \"white\" size = \"20\">opubmmspbetmfbeupspnf.cvujujtbojdftubsu. Why are emperors names so wierdly...?</font></html>"
 	except:
-		return "<html><font color = \"white\" size = \"20\">opubmmspbetmfbeupspnf.cvujujtbojdftubsu.  Why are emperors names so wierdly...?</font></html>"
+		return "<html><font color = \"white\" size = \"20\">opubmmspbetmfbeupspnf.cvujujtbojdftubsu. Why are emperors names so wierdly...?</font></html>"
 
 if __name__ == '__main__':
 	app.run(debug = True)
