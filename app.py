@@ -31,5 +31,9 @@ def rebound():
 	except:
 		return "<html><font color = \"white\" size = \"20\">opubmmspbetmfbeupspnf.cvujujtbojdftubsu. Why are emperors names so wierdly...?</font></html>"
 
+@app.route('/')
+def fail():
+	return "<html><font color = \"white\" size = \"20\">opubmmspbetmfbeupspnf.cvujujtbojdftubsu. Why are emperors names so wierdly...?</font></html>"
+
 if __name__ == '__main__':
-	app.run(debug = True)
+	app.run()
