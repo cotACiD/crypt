@@ -4,7 +4,7 @@ import codecs
 
 app = Flask(__name__)
 
-hashes = ["pzzki2"]
+hashes = ["pzzki2","b7d7d20cec9ebd4cd2a91c56325972d5"]
 
 def htmlImage():
 	f=codecs.open("playfair", 'r')
@@ -24,7 +24,7 @@ def rebound():
 			return htmlImage()
 		elif key == "Zmlu":
 			return "Yes! You have finished this puzzle. :)"
-		elif key in hashes:
+		elif key.lower() in hashes:
 			return Image()
 		else:
 			return "<html><font color = \"white\" size = \"20\">opubmmspbetmfbeupspnf.cvujujtbojdftubsu. Why are emperors names so wierdly...?</font></html>"
