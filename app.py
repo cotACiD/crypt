@@ -27,13 +27,13 @@ def rebound():
 		elif key.lower() in hashes:
 			return Image()
 		else:
-			return "<html><font color = \"white\" size = \"20\">opubmmspbetmfbeupspnf.cvujujtbojdftubsu. Why are emperors names so wierdly...?</font></html>"
+			return "<html><font color = \"white\" size = \"20\">opubmmspbetmfbeupspnf.cvujujtbojdftubsu. Why are emperors' names so wierdly...?</font></html>"
 	except:
-		return "<html><font color = \"white\" size = \"20\">opubmmspbetmfbeupspnf.cvujujtbojdftubsu. Why are emperors names so wierdly...?</font></html>"
+		return "<html><font color = \"white\" size = \"20\">opubmmspbetmfbeupspnf.cvujujtbojdftubsu. Why are emperors' names so wierdly...?</font></html>"
 
 @app.route('/')
 def fail():
-	return "<html><font color = \"white\" size = \"20\">opubmmspbetmfbeupspnf.cvujujtbojdftubsu. Why are emperors names so wierdly...?</font></html>"
+	return "<html><font color = \"white\" size = \"20\">opubmmspbetmfbeupspnf.cvujujtbojdftubsu. Why are emperors' names so wierdly...?</font></html>"
 
 if __name__ == '__main__':
 	app.run()
